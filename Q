@@ -1,0 +1,35 @@
+What is HTML?
+HTML describes the structure of a webpage
+HTML is the standard markup language mainly used to create web pages
+HTML consists of a set of elements that helps the browser how to view the content
+All of the mentioned (ans)
+
+Who is the father of HTML?
+Rasmus Lerdorf
+Tim Berners-Lee(ans)
+Brendan Eich
+Sergey Brin
+
+Which of the following is used to read an HTML page and render it?
+Web server
+Web network
+Web browser( ans)
+Web matrix
+
+Which of the following tag is used for inserting the largest heading in HTML?
+a) head
+b) <h1>(ans)
+c) <h6>
+d) heading
+
+In which part of the HTML metadata is contained?
+a) head tag(ans)
+b) title tag
+c) html tag
+d) body tag
+
+Which of the following elements in HTML5 defines video or movie content?
+a) <video>(ans)
+b) <movie>
+c) <audio>
+d) <audio>
