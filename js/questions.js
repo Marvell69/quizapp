@@ -1,3 +1,5 @@
+// options are arrays
+
 let questions = [
   {
     num: 1,

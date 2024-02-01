@@ -4,6 +4,7 @@ const exit_btn = info_box.querySelector(".buttons .quit");
 const continue_btn = document.querySelector(".buttons .restart");
 const quiz_box = document.querySelector(".quiz-box");
 const timeCount = quiz_box.querySelector(".timer .timer-sec");
+const timeLine = quiz_box.querySelector("header .timer_line");
 
 const option_list = document.querySelector(".option-list");
 
@@ -21,12 +22,14 @@ continue_btn.onclick = () => {
   showQuestions(0);
   queCounter(1);
   startTimer(15);
+  startTimerLine(0);
 };
 
 let que_count = 0;
 let que_numb = 1;
 let counter;
 let timeValue = 15;
+let widthValue = 0;
 
 const next_btn = quiz_box.querySelector(".next-btn");
 
@@ -38,6 +41,8 @@ next_btn.onclick = () => {
     queCounter(que_numb);
     clearInterval(counter);
     startTimer(timeValue);
+    clearInterval(counterLine);
+    startTimerLine(widthValue);
   } else {
     console.log("Questions completed");
   }
@@ -117,6 +122,17 @@ function startTimer(time) {
     if (time < 0) {
       clearInterval(counter);
       timeCount.textContent = "00";
+    }
+  }
+}
+
+function startTimerLine(time) {
+  counterLine = setInterval(timer, 29);
+  function timer() {
+    time += 1;
+    timeLine.style.width = time + "px";
+    if (time > 549) {
+      clearInterval(counterLine);
     }
   }
 }

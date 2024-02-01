@@ -160,12 +160,12 @@ body {
   border: 1px solid lightgray;
   user-select: none;
 }
-.quiz-box header .time-line {
+.quiz-box header .time_line {
   position: absolute;
   bottom: 0px;
   left: 0px;
   height: 3px;
-  width: 50%;
+  /* width: 50%; */
   background: red;
 }
 .quiz-box section {
